@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with Me</title>
+    <title>chat</title>
 
-    <!-- Meta tags to show your purple logo on WhatsApp -->
-    <meta property="og:title" content="Start a Chat" />
-    <meta property="og:description" content="Click here to message me directly on WhatsApp." />
-    <meta property="og:image" content="caryaar.jpeg" />
+    <!-- Essential Open Graph Tags for WhatsApp -->
+    <meta property="og:title" content="chat" />
+    <meta property="og:description" content="whatsapp redirect" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nayankawale658-wq.github.io/chat/" />
+    
+    <!-- Exact absolute secure URL mapping with image specs -->
+    <meta property="og:image" content="https://nayankawale658-wq.github.io/chat/logo.jpg" />
+    <meta property="og:image:secure_url" content="https://nayankawale658-wq.github.io/chat/logo.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
 
-    <!-- Seamless instant redirect script -->
+    <!-- Schema.org Microdata markup fallback for older WhatsApp crawlers -->
+    <meta itemprop="name" content="chat">
+    <meta itemprop="description" content="whatsapp redirect">
+    <meta itemprop="image" content="https://nayankawale658-wq.github.io/chat/logo.jpg">
+
+    <!-- Direct Messaging Deep-Link script -->
     <script>
-        // Forces mobile devices to launch WhatsApp instantly
         window.location.href = "whatsapp://send?phone=919867659660";
-        
-        // Fallback: If they are on desktop/PC, open WhatsApp Web after 1 second
         setTimeout(function() {
             window.location.href = "https://api.whatsapp.com/send/?phone=919867659660";
         }, 1000);
     </script>
 </head>
-<body style="background-color: #ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
-    
+<body style="background-color: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif;">
     <div style="text-align: center;">
-        <p style="font-size: 18px; color: #333333; margin-bottom: 20px;">Redirecting you to WhatsApp...</p>
-        <a href="whatsapp://send?phone=919867659660" style="display: inline-block; padding: 12px 24px; background-color: #25D366; color: white; text-decoration: none; border-radius: 30px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            Click here if not redirected automatically
-        </a>
+        <p style="font-size: 18px; color: #333333;">Redirecting to WhatsApp...</p>
     </div>
-
 </body>
 </html>
